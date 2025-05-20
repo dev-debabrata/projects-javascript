@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  height: 50vh;
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  justify-content: center;
+  background-color: #212529;
+}
+
+.calculator-title {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #adb5bd;
+}
+
+.calculator {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 10px 20px 20px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.display {
+  height: 80px;
+  width: 100%;
+  outline: none;
+  border-radius: 6px;
+  border: none;
+  text-align: right;
+  margin: 10px 0;
+  font-size: 25px;
+  color: #000e1a;
+  pointer-events: none;
+  background-color: #ced4da;
+  padding: 10px;
+}
+
+.buttons {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.buttons button {
+  padding: 12px 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #ced4da;
+}
+
+.buttons button:active {
+  transform: scale(0.99);
+}
+
+.operator {
+  color: red;
+}
